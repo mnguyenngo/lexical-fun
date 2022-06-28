@@ -1,3 +1,5 @@
+# Lexical Fun
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -5,9 +7,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+  pnpm run dev
+    Starts the development server.
+
+  pnpm run build
+    Builds the app for production.
+
+  pnpm start
+    Runs the built app in production mode.
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -17,6 +24,31 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Using pnpm
+
+```bash
+  pnpm run dev
+    Starts the development server.
+
+  pnpm run build
+    Builds the app for production.
+
+  pnpm start
+    Runs the built app in production mode.
+
+  pnpm lint
+    Runs Next.js built-in ESLint configuration
+
+  pnpm install
+    https://pnpm.io/cli/install
+
+  pnpm add <pkg>
+    https://pnpm.io/cli/add
+
+  pnpm <cmd>
+    https://pnpm.io/cli/run
+```
 
 ## Learn More
 
