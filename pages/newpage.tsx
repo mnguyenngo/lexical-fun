@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Editor from "../components/Editor";
+import Editor from "../components/lexical/Editor";
 
 const NewPage: NextPage = () => {
   return (
