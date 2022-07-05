@@ -5,7 +5,7 @@ import { useEffect } from "react";
 // highly composable. Furthermore, you can lazy load plugins if
 // desired, so you don't pay the cost for plugins until you
 // actually use them.
-export default function MyCustomAutoFocusPlugin() {
+export default function AutoFocusPlugin() {
   const [editor] = useLexicalComposerContext();
 
   useEffect(() => {
