@@ -1,13 +1,19 @@
 import { LexicalComposer } from "@lexical/react/LexicalComposer";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
-import ToolbarPlugin from "./plugins/ToolbarPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
-import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
+import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
+import { LinkPlugin } from "@lexical/react/LexicalLinkPlugin";
+import { ListPlugin } from "@lexical/react/LexicalListPlugin";
+import ToolbarPlugin from "./plugins/ToolbarPlugin";
 import TreeViewPlugin from "./plugins/TreeViewPlugin";
-import AutoFocusPlugin from "./plugins/AutoFocusPlugin";
+import AutoLinkPlugin from "./plugins/AutoLinkPlugin";
+import CodeHighlightPlugin from "./plugins/CodeHighlightPlugin";
+import ListMaxIndentLevelPlugin from "./plugins/ListMaxIndentLevelPlugin";
 import editorConfig from "./editorConfig";
-import onChange from "./onChange";
+
+// import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
+// import onChange from "./onChange";
 
 export default function Editor() {
   return (
@@ -21,10 +27,15 @@ export default function Editor() {
               <div className="editor-placeholder">Enter some text...</div>
             }
           />
-          <OnChangePlugin onChange={onChange} />
           <HistoryPlugin />
           <TreeViewPlugin />
           <AutoFocusPlugin />
+          <LinkPlugin />
+          <ListPlugin />
+          <AutoLinkPlugin />
+          <CodeHighlightPlugin />
+          <ListMaxIndentLevelPlugin maxDepth={7} />
+          {/* <OnChangePlugin onChange={onChange} /> */}
         </div>
       </div>
     </LexicalComposer>

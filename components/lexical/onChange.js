@@ -1,5 +1,7 @@
 import { $getRoot, $getSelection } from "lexical";
 
+// This can be changed to a different function for troubleshooting.
+
 // When the editor changes, you can get notified via the
 // LexicalOnChangePlugin!
 export default function onChange(editorState) {
